@@ -1,8 +1,9 @@
-import express  from "express"
-import database from './db/connect'
+import express from "express"
+import appConfig from './config/index';
 
 const app = express()
-const port = 3000
+const port = process.env.LOCAL_PORT || 3000
 
-database()
+appConfig(app)
+
 app.listen(port, () => console.log('💻 listening on port: ', port)) 
