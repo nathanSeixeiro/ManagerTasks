@@ -1,16 +1,26 @@
 import mongoose from 'mongoose'
+import taskModel from '../models/taskModel'
 import Task, { ITasks } from '../models/taskModel'
 
 class taskController{
-    createTask(req: Request, res: Response){
+    async store(req: Request, res: Response){
+        const {nameTask, descriptionTask, dateTask } = req.body
 
-        const newTask: ITasks = new Task({
-            nameTask: 'Nova Tarefa',
-            descriptionTask: 'Descrição da nova tarefa',
-            dateTask: new Date('2023-04-01'),
-        });
-        console.log(newTask)
+        const createTask = await taskModel.create({
+            nameTask: nameTask,
+            descriptionTask: descriptionTask,
+            dateTask: dateTask,
+        })
+
+        res.status(200).json(createTask)
     }
+
+    async index(req: Request, res: Response){
+        const getTasks = await taskModel.find()
+        res.status(200).json(getTasks)
+    }
+
+
 }
 
-export default taskController
+export default new taskController

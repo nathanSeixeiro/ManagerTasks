@@ -3,8 +3,6 @@ import taskController from '../controllers/taskController'
 
 export const router = Router()
 
-router.get('/', (req: Request, res: Response) =>{
-    console.log('salve')
-    res.send('salve')
-})
-// router.get('/tasks', taskController)
+router.get('/tasks',taskController.index)
+
+router.post('/tasks', taskController.store)
