@@ -28,7 +28,7 @@
 
 - Uma aplicação para cadastrar atividadades e ser notificado com antedecedencia
 - Intuito de aplicar conceitos de testes unitarios (não implementado ainda)
-- Aplicar Clean Architeture (implementando)
+- Aplicar Clean Architecture (implementando)
 - Introduzir Microsserviços (não implementado)
 
 
