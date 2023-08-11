@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 import taskModel from '../models/taskModel'
 import Task, { ITasks } from '../models/taskModel'
+import { Request, Response } from 'express'
 
 class taskController{
 //create task
