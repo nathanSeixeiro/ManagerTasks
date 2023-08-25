@@ -29,8 +29,6 @@
 - Uma aplicação para cadastrar atividadades e ser notificado com antedecedencia
 - Intuito de aplicar conceitos de testes unitarios (não implementado ainda)
 - Aplicar Clean Architecture (implementando)
-- Introduzir Microsserviços (não implementado)
-
 
 To see the **client**, click here: (**em breve**) <!-- [PROJECT_NAME Web](https://github/eliasgcf/readme-template)</br>-->
 
