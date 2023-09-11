@@ -1,11 +1,14 @@
 export class Task {
     private nameTask: string
     private descriptionTask: string
-    private dateTask: Date
+    private dateTask: Date | number
     private completedTask: boolean = false
 
-    
-    constructor(nameTask: string, descriptionTask: string, dateTask: Date) { 
+    Task(){
+
+    }
+
+    constructor(nameTask: string, descriptionTask: string, dateTask: number | Date) { 
         this.nameTask = nameTask
         this.descriptionTask = descriptionTask
         this.dateTask = dateTask
@@ -19,7 +22,7 @@ export class Task {
         return this.descriptionTask
     }
 
-    get date(): Date {
+    get date(): Date|number {
         return this.dateTask
     }
 
