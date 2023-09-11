@@ -1,5 +1,4 @@
 export class Task {
-    private readonly _userId!: string | number 
     private nameTask: string
     private descriptionTask: string
     private dateTask: Date
