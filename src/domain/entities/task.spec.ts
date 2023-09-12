@@ -1,4 +1,4 @@
-import { Task } from "./task"
+import { Task } from "./task-model"
 
 describe('Task Entity', () =>{
     const makeSut = () => {
