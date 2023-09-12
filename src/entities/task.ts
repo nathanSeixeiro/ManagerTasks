@@ -2,16 +2,13 @@ export class Task {
     private nameTask: string
     private descriptionTask: string
     private dateTask: Date | number
-    private completedTask: boolean = false
-
-    Task(){
-
-    }
+    private completedTask: boolean
 
     constructor(nameTask: string, descriptionTask: string, dateTask: number | Date) { 
         this.nameTask = nameTask
         this.descriptionTask = descriptionTask
         this.dateTask = dateTask
+        this.completedTask = false
     }
 
     get name(): string {
@@ -26,8 +23,8 @@ export class Task {
         return this.dateTask
     }
 
-    get completed(): Boolean{
-        return this.completed
+    get completed(): boolean {
+        return this.completedTask
     }
 
     set name(name: string){
@@ -42,7 +39,7 @@ export class Task {
     }
 
     set completed(status: boolean){
-        this.completed = status
+        this.completedTask = status
     }
 
 }
