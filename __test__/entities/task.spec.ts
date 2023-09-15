@@ -1,4 +1,4 @@
-import { Task } from "../../src/domain/entities"
+import { Task } from "@/domain/entities"
 
 describe('Task Entity', () =>{
     const makeSut = () => {
